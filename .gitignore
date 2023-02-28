@@ -1,0 +1,9 @@
+program/whitelist/target
+program/token-swap/target
+
+scripts/node_modules
+scripts/src/keys
+scripts/yarn-error.log
+
+front-end/node_modules
+front-end/.next

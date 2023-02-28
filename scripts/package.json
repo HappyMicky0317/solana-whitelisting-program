@@ -1,0 +1,33 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/buffer-layout": "^3.0.0",
+    "@solana/spl-token": "^0.1.8",
+    "@solana/spl-token-swap": "^0.1.2",
+    "@solana/web3.js": "^1.30.0",
+    "bn.js": "^5.2.0",
+    "fs-extra": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  },
+  "scripts": {
+    "storeaddress": "ts-node src/features/main/storeMainAddresses.ts",
+    "fundaddress": "ts-node src/features/main/fundMainAddresses.ts",
+    "createmint": "ts-node src/features/token/createMint.ts",
+    "createtoken": "ts-node src/features/token/createTokenAndStopMint.ts",
+    "createpool": "ts-node src/features/whitelist/createPool.ts",
+    "initpda": "ts-node src/features/whitelist/initializePda.ts",
+    "swapsol": "ts-node src/features/whitelist/swapSol.ts",
+    "wrapsol": "ts-node src/features/whitelist/wrapSol.ts",
+    "unwrapsol": "ts-node src/features/whitelist/unwrapSol.ts",
+    "formatpool": "ts-node src/features/addressParse/tokenPool.ts",
+    "formatwlglobal": "ts-node src/features/addressParse/whiteListGlobal.ts",
+    "formatwluser": "ts-node src/features/addressParse/whiteListUser.ts"
+  }
+}
